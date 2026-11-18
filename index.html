@@ -3,51 +3,83 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Situs demo ARENNOVA untuk mencoba paket template usaha gratis.">
-  <title>ARENNOVA — Contoh Paket Template Usaha Mikro</title>
+  <meta name="description" content="ARENNOVA — UMKM Payakumbuh penyedia gula aren cair, semut, batok, serta kebutuhan minuman untuk coffee shop.">
+  <meta name="theme-color" content="#1f4d3a">
+  <title>ARENNOVA — Gula Aren & Pemasok Minuman</title>
   <link rel="stylesheet" href="catalog.css">
+  <script src="chatbot.js" defer></script>
 </head>
 <body>
-  <main class="wrap">
-    <header class="top">
-      <a class="brand" href="index.html">ARENNOVA <span>contoh produk digital</span></a>
-    </header>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Beranda ARENNOVA">
+        <span class="brand-mark">A</span><span><strong>ARENNOVA</strong><small>Industri Hulu Aren</small></span>
+      </a>
+      <nav aria-label="Navigasi utama">
+        <a href="#produk">Produk</a><a href="#untuk-bisnis">Untuk Bisnis</a><a href="#tentang">Tentang</a>
+      </nav>
+      <a class="nav-cta" href="https://www.instagram.com/arennova_03/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </header>
+
+  <main id="top">
     <section class="hero">
-      <p class="tag">PAKET DIGITAL · CONTOH GRATIS</p>
-      <h1>Mulai merapikan usaha kecil, satu langkah sederhana.</h1>
-      <p>Template dasar untuk mencatat stok dan menyiapkan konten promosi. Gunakan sebagai prototipe untuk diuji dan diberi masukan.</p>
-    </section>
-    <section class="product" aria-labelledby="product-title">
-      <div class="product-art" aria-hidden="true"><span>STOK</span><span>PROMOSI</span><span>CATATAN</span></div>
-      <div class="product-info">
-        <p class="tag">PAKET PEMULA</p>
-        <h2 id="product-title">Paket Template Usaha Mikro</h2>
-        <p class="desc">File spreadsheet, contoh transaksi, dan contoh caption promosi yang dapat disunting.</p>
-        <ul>
-          <li>Template daftar stok sederhana</li>
-          <li>Template catatan transaksi harian</li>
-          <li>Contoh caption promosi yang dapat disunting</li>
-        </ul>
-        <a class="button" href="products/template-stok.csv" download>Unduh template stok</a>
-        <p class="small"><a href="products/template-transaksi.csv" download>Unduh template transaksi</a> · <a href="products/caption-promosi.md">Lihat contoh caption</a></p>
-        <p class="small">Tidak ada checkout, pembayaran, atau integrasi merchant. Semua materi adalah contoh gratis untuk validasi.</p>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">PAYAKUMBUH · SUMATERA BARAT</p>
+          <h1>Rasa alami untuk setiap sajian minuman.</h1>
+          <p class="lead">Pemasok gula aren untuk coffee shop, usaha minuman, dan kebutuhan dapur—dari batang aren pilihan.</p>
+          <div class="hero-actions">
+            <button class="button" data-chat-open>Mulai tanya produk</button>
+            <a class="button button-light" href="#produk">Lihat katalog</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Produk gula aren ARENNOVA">
+          <div class="sun"></div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div>
+          <div class="hero-card"><span>BATANG AREN</span><strong>Alami · Praktis · Tepat guna</strong></div>
+        </div>
       </div>
     </section>
-    <section class="steps">
-      <h2>Uji sebelum dijual</h2>
-      <ol>
-        <li>Uji file dengan data contoh, bukan data pelanggan atau informasi rahasia.</li>
-        <li>Minta 5–10 orang mencoba dan catat bagian yang membingungkan.</li>
-        <li>Perbaiki paket; tentukan harga hanya setelah manfaat tervalidasi.</li>
-      </ol>
+
+    <section class="trust strip"><div class="wrap"><span>Gula Aren Cair</span><span>Gula Aren Semut</span><span>Gula Aren Batok</span><span>Untuk Kopi & Teh</span></div></section>
+
+    <section class="section" id="produk">
+      <div class="wrap">
+        <p class="eyebrow">KATALOG UTAMA</p><h2>Pilihan untuk kebutuhan Anda</h2>
+        <div class="product-grid">
+          <article class="product-card"><div class="product-image liquid"><span>A</span></div><div class="product-content"><p class="kind">CAIR</p><h3>Gula Aren Cair</h3><p>Praktis untuk coffee shop, es kopi, teh, dan minuman rumahan.</p><div class="prices"><b>¼ liter <strong>Rp13.500</strong></b><b>½ liter <strong>Rp26.000</strong></b><b>1 liter <strong>Rp50.000</strong></b></div><button class="text-button" data-product="Gula Aren Cair">Tanya ketersediaan →</button></div></article>
+          <article class="product-card"><div class="product-image crystal"><span>S</span></div><div class="product-content"><p class="kind">SEMUT</p><h3>Gula Aren Semut</h3><p>Berserat halus dan mudah ditakar untuk penyiapan atau penyajian.</p><div class="prices"><b>¼ kg <strong>Rp9.000</strong></b><b>½ kg <strong>Rp21.000</strong></b><b>1 kg <strong>Rp40.000</strong></b></div><button class="text-button" data-product="Gula Aren Semut">Tanya ketersediaan →</button></div></article>
+          <article class="product-card"><div class="product-image block"><span>B</span></div><div class="product-content"><p class="kind">BATOK</p><h3>Gula Aren Batok</h3><p>Dalam kemasan tradisional untuk kebutuhan dapur dan produk olahan.</p><div class="prices"><b>¼ kg <strong>Rp7.500</strong></b><b>½ kg <strong>Rp16.000</strong></b><b>1 kg <strong>Rp32.000</strong></b></div><button class="text-button" data-product="Gula Aren Batok">Tanya ketersediaan →</button></div></article>
+        </div>
+        <p class="note">Harga dapat dikonfirmasi ulang sesuai area pengiriman dan kebutuhan pesanan. Masa simpan estimasi 6–12 bulan; simpan sesuai petunjuk kemasan.</p>
+      </div>
     </section>
-    <section class="feedback" aria-labelledby="feedback-title">
-      <h2 id="feedback-title">Punya masukan?</h2>
-      <p>Bagikan saran atau laporkan masalah melalui GitHub Issues.</p>
-      <a class="button" href="https://github.com/Stuqoa69/usaharapi-site/issues/new">Kirim masukan</a>
-      <p class="small">Catatan: masukan yang dikirim lewat Issues dapat terlihat publik. Jangan sertakan data pribadi, informasi pelanggan, kata sandi, OTP, atau rahasia lainnya.</p>
+
+    <section class="section business" id="untuk-bisnis">
+      <div class="wrap business-grid"><div><p class="eyebrow">UNTUK USAHA</p><h2>Solusi dari hulu untuk coffee shop & UMKM minuman.</h2></div><div class="business-items"><p><strong>Perkiraan kebutuhan</strong><span>Tentukan produk dan volume per minggu atau bulan.</span></p><p><strong>Catatan pesanan terstruktur</strong><span>Tulis lokasi, produk, ukuran, dan kebutuhan Anda.</span></p><p><strong>Konfirmasi tim ARENNOVA</strong><span>Stok, harga final, dan pengiriman dikonfirmasi langsung.</span></p></div></div>
     </section>
-    <footer>Prototipe situs. Tidak memproses pembayaran dan tidak menjanjikan hasil usaha.</footer>
+
+    <section class="section lead-section" id="hubungi"><div class="wrap lead-grid"><div><p class="eyebrow">DAPATKAN PENAWARAN</p><h2>Ceritakan kebutuhan usaha Anda.</h2><p>Tim ARENNOVA akan meninjau permintaan dan menghubungi melalui email atau WhatsApp sesuai pilihan Anda.</p></div>
+      <form id="lead-form" class="lead-form">
+        <label>Nama usaha / nama Anda<input name="nama" required autocomplete="organization" placeholder="Nama usaha"></label>
+        <div class="field-row"><label>Lokasi kota/kabupaten<input name="lokasi" required placeholder="Contoh: Sijunjung"></label><label>Email aktif<input type="email" name="email" required placeholder="nama@email.com"></label></div>
+        <div class="field-row"><label>Produk<select name="produk" required><option value="">Pilih produk</option><option>Aren Cair</option><option>Aren Semut</option><option>Aren Batok</option><option>Belum menentukan</option></select></label><label>Kebutuhan per bulan<input name="kebutuhan" placeholder="Contoh: 20 liter"></label></div>
+        <label>Catatan pesanan<textarea name="pesan" rows="4" placeholder="Ukuran kemasan, frekuensi pemesanan, atau pertanyaan lain"></textarea></label>
+        <input type="hidden" name="sumber" value="website-arennova">
+        <button class="button" type="submit">Kirim permintaan</button><p id="lead-status" class="form-status" role="status"></p>
+      </form>
+    </div></section>
+
+    <section class="section" id="tentang"><div class="wrap about"><p class="eyebrow">TENTANG ARENNOVA</p><h2>Mendukung rantai nilai gula aren, dari hulu ke coffee shop.</h2><p>ARENNOVA berlokasi di Kota Payakumbuh, Sumatera Barat. Kami melayani kebutuhan gula aren dan berencana mengembangkan ekosistem pemasok untuk es kristal, kopi, teh, grobak, serta coffee shop.</p></div></section>
   </main>
+
+  <footer class="footer"><div class="wrap footer-grid"><div><strong>ARENNOVA</strong><p>Payakumbuh, Sumatera Barat</p></div><div><a href="mailto:arennova3@gmail.com">arennova3@gmail.com</a><a href="https://www.instagram.com/arennova_03/" target="_blank" rel="noopener">@arennova_03</a></div></div></footer>
+
+  <button class="chat-fab" data-chat-open aria-label="Buka chatbot ARENNOVA"><span>?</span></button>
+  <aside class="chat-panel" aria-label="Asisten ARENNOVA" aria-hidden="true">
+    <header><div><strong>Asisten ARENNOVA</strong><small>Siap membantu kebutuhan usaha</small></div><button class="chat-close" aria-label="Tutup chatbot">×</button></header>
+    <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="message bot">Halo! Mau tanya harga, ukuran, atau kebutuhan pemesanan?</div></div>
+    <div class="quick-replies"><button data-answer="cair">Aren cair</button><button data-answer="semut">Aren semut</button><button data-answer="batok">Aren batok</button><button data-answer="pesan">Cara pesan</button></div>
+  </aside>
 </body>
 </html>

@@ -1,22 +1,21 @@
-# ARENNOVA — situs demo
+# ARENNOVA — website siap pakai
 
-Situs statis publik yang berisi katalog template gratis.
+Website publik untuk katalog gula aren cair, semut, dan batok.
 
-## Isi
-- `index.html`: halaman utama.
-- `catalog.css`: tampilan responsif.
-- `products/`: template CSV dan contoh caption.
-- `.github/ISSUE_TEMPLATE/masukan-pelanggan.yml`: formulir terstruktur untuk masukan publik.
+## Publikasi
+GitHub Pages: `main` atau gunakan branch ini untuk tinjauan.
 
-## GitHub Pages
-Situs dipublikasikan melalui GitHub Pages dari branch `main`, folder `/(root)`.
+## Integrasi lead
+Formulir belum terhubung ke penyimpanan. Sebelum produksi:
 
-## Alur masukan
-1. Pengunjung memilih **Kirim masukan** pada situs dan mengisi formulir GitHub Issue.
-2. Pemilik repositori meninjau dan mengelompokkan laporan berdasarkan kategori serta dampaknya.
-3. Perubahan kode disiapkan dan ditinjau sebelum diterapkan dan diterbitkan.
-4. Pemilik repositori dapat membalas Issue setelah perubahan tersedia.
+1. Buat Google Apps Script Web App milik akun `arennova3@gmail.com`.
+2. Script menerima POST JSON, menyimpan ke Google Sheets, lalu mengirim email ke alamat yang sama.
+3. Setel URL endpoint sebagai `LEAD_ENDPOINT` pada `chatbot.js`.
+4. Jangan menyimpan API key atau secret di repositori publik.
 
-Masukan GitHub Issues bersifat publik. Jangan kirim data pribadi, data pelanggan/usaha, kata sandi, OTP, informasi pembayaran, atau rahasia. Formulir membantu mengumpulkan laporan, tetapi laporan tetap perlu ditinjau sebelum ditindaklanjuti.
+## Produk
+- Aren cair: Rp13.500/¼ L, Rp26.000/½ L, Rp50.000/1 L.
+- Aren semut: Rp9.000/¼ kg, Rp21.000/½ kg, Rp40.000/1 kg.
+- Aren batok: Rp7.500/¼ kg, Rp16.000/½ kg, Rp32.000/1 kg.
 
-Tidak ada transaksi, checkout, server backend, API, atau integrasi pembayaran. Jangan tambahkan rahasia atau data pelanggan ke repositori publik ini.
+Harga final, stok, dan pengiriman dikonfirmasi sebelum pemesanan.
