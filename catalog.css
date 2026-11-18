@@ -21,8 +21,9 @@ h2 { margin: 8px 0 12px; font-size: 1.65rem; }
 .button { display: inline-block; margin-top: 12px; padding: 13px 18px; border-radius: 9px; background: #3949ab; color: white; font-weight: 750; text-decoration: none; }
 .button:hover { background: #2e3c92; }
 .small, footer { color: #667085; font-size: .86rem; line-height: 1.55; }
-.steps { margin: 46px 0; padding: 26px; border-radius: 16px; background: #eef1ff; }
-.steps h2 { margin-top: 0; }
+.steps, .feedback { margin: 46px 0; padding: 26px; border-radius: 16px; background: #eef1ff; }
+.steps h2, .feedback h2 { margin-top: 0; }
 .steps ol { margin-bottom: 0; padding-left: 22px; color: #394456; line-height: 1.9; }
+.feedback p { color: #394456; line-height: 1.6; }
 footer { margin: 30px 0; }
 @media (max-width: 640px) { .top { align-items: flex-start; padding: 18px 0; } .hero { padding: 42px 0 28px; } .product { grid-template-columns: 1fr; } .product-art { min-height: 210px; } }
