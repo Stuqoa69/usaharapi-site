@@ -1,5 +1,5 @@
 name: Masukan pelanggan
-description: Bagikan kendala atau saran untuk situs UsahaRapi.
+description: Bagikan kendala atau saran untuk situs ARENNOVA.
 title: "[Masukan] "
 labels:
   - masukan pelanggan
@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Terima kasih sudah mencoba UsahaRapi. Issue ini bersifat publik dan dapat dilihat siapa pun.
+        Terima kasih sudah mencoba ARENNOVA. Issue ini bersifat publik dan dapat dilihat siapa pun.
 
         **Jangan sertakan nama lengkap, nomor telepon, alamat, data pelanggan/usaha, kata sandi, OTP, informasi pembayaran, atau rahasia lainnya.**
   - type: dropdown
