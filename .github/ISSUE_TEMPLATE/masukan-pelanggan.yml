@@ -1,0 +1,71 @@
+name: Masukan pelanggan
+ description: Bagikan kendala atau saran untuk situs UsahaRapi.
+ title: "[Masukan] "
+ labels: ["masukan pelanggan"]
+ body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah mencoba UsahaRapi. Issue ini bersifat publik dan dapat dilihat siapa pun.
+        **Jangan sertakan nama lengkap, nomor telepon, alamat, data pelanggan/usaha, kata sandi, OTP, informasi pembayaran, atau rahasia lainnya.**
+  - type: dropdown
+    id: kategori
+    attributes:
+      label: Kategori masukan
+      options:
+        - Ada bagian yang tidak berfungsi
+        - Saya bingung menggunakan bagian tertentu
+        - Saran tampilan atau aksesibilitas
+        - Permintaan fitur atau template
+        - Lainnya
+    validations:
+      required: true
+  - type: textarea
+    id: tujuan
+    attributes:
+      label: Apa yang ingin Anda lakukan?
+      description: Ceritakan tujuan Anda secara umum. Jangan masukkan data pribadi atau rahasia.
+      placeholder: Saya ingin mencatat stok produk dengan lebih mudah.
+    validations:
+      required: true
+  - type: textarea
+    id: kendala
+    attributes:
+      label: Kendala atau bagian yang membingungkan
+      description: Apa yang terjadi? Jika melaporkan masalah teknis, tuliskan langkah umum untuk mengulanginya.
+      placeholder: Setelah menekan tautan unduhan, ...
+    validations:
+      required: true
+  - type: textarea
+    id: harapan
+    attributes:
+      label: Perubahan apa yang akan membantu?
+      description: Berikan saran singkat bila ada.
+    validations:
+      required: false
+  - type: dropdown
+    id: dampak
+    attributes:
+      label: Seberapa menghambat hal ini?
+      options:
+        - Saran saja
+        - Sedikit menghambat
+        - Sulit menyelesaikan tugas
+        - Tidak dapat menggunakan fitur
+    validations:
+      required: true
+  - type: input
+    id: perangkat
+    attributes:
+      label: Perangkat atau browser (opsional)
+      description: Sebutkan hanya jika masalah tampilan/fungsi berbeda di perangkat tertentu. Jangan cantumkan akun atau data sensitif.
+      placeholder: Contoh: Android, Chrome
+    validations:
+      required: false
+  - type: checkboxes
+    id: keamanan
+    attributes:
+      label: Pemeriksaan sebelum mengirim
+      options:
+        - label: Saya sudah memastikan laporan ini tidak memuat data pribadi, informasi pelanggan, kata sandi, OTP, informasi pembayaran, atau rahasia.
+          required: true
